@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "02f13e2671af59af70e72995b00b832b",
-    "content-hash": "026d6c77ad482d863db48d739dd3cf3f",
+    "hash": "15c48f87a97714c9f456ff41f056aadb",
+    "content-hash": "1a28fc7b449d6b9cd348fbbc688a3b95",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -162,6 +162,64 @@
             "time": "2015-11-06 14:35:42"
         },
         {
+            "name": "guzzlehttp/psr7",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "5c6447c9df362e8f8093bda8f5d8873fe5c7f65b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/5c6447c9df362e8f8093bda8f5d8873fe5c7f65b",
+                "reference": "5c6447c9df362e8f8093bda8f5d8873fe5c7f65b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2016-06-24 23:00:38"
+        },
+        {
             "name": "interpro/core",
             "version": "1.0.3",
             "source": {
@@ -206,16 +264,16 @@
         },
         {
             "name": "interpro/entrance",
-            "version": "1.0.1",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/entrance.git",
-                "reference": "83d9cc230f598ac3bd9414001391c47c83f15330"
+                "reference": "118aab4cc05856843f77f8be4ec4d19ea545c88c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/entrance/zipball/83d9cc230f598ac3bd9414001391c47c83f15330",
-                "reference": "83d9cc230f598ac3bd9414001391c47c83f15330",
+                "url": "https://api.github.com/repos/intpro/entrance/zipball/118aab4cc05856843f77f8be4ec4d19ea545c88c",
+                "reference": "118aab4cc05856843f77f8be4ec4d19ea545c88c",
                 "shasum": ""
             },
             "require": {
@@ -253,20 +311,20 @@
             "keywords": [
                 "entrance"
             ],
-            "time": "2016-12-28 09:39:54"
+            "time": "2017-01-15 09:25:14"
         },
         {
             "name": "interpro/extractor",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/extractor.git",
-                "reference": "29ce1c33f2e277728317d009d9df7142002c28a5"
+                "reference": "e78b5d3f83ada8b65a55272ecc02f119078e0493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/extractor/zipball/29ce1c33f2e277728317d009d9df7142002c28a5",
-                "reference": "29ce1c33f2e277728317d009d9df7142002c28a5",
+                "url": "https://api.github.com/repos/intpro/extractor/zipball/e78b5d3f83ada8b65a55272ecc02f119078e0493",
+                "reference": "e78b5d3f83ada8b65a55272ecc02f119078e0493",
                 "shasum": ""
             },
             "require": {
@@ -299,25 +357,74 @@
             "keywords": [
                 "extractor"
             ],
-            "time": "2016-12-28 10:40:31"
+            "time": "2016-12-29 08:41:59"
         },
         {
-            "name": "interpro/imageaggr",
+            "name": "interpro/feedback",
             "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/intpro/imageaggr.git",
-                "reference": "4630816cc9622cb7fcd051e952ac135ec136595e"
+                "url": "https://github.com/intpro/feedback.git",
+                "reference": "a7364ffcb13be05cf8e41930adf603fbee2d8104"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/4630816cc9622cb7fcd051e952ac135ec136595e",
-                "reference": "4630816cc9622cb7fcd051e952ac135ec136595e",
+                "url": "https://api.github.com/repos/intpro/feedback/zipball/a7364ffcb13be05cf8e41930adf603fbee2d8104",
+                "reference": "a7364ffcb13be05cf8e41930adf603fbee2d8104",
                 "shasum": ""
             },
             "require": {
                 "interpro/core": "1.0.*",
+                "interpro/entrance": "1.0.*",
                 "interpro/extractor": "1.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "files": [],
+                "psr-4": {
+                    "Interpro\\Feedback\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Boris Dorofeev",
+                    "email": "boris.dorofeev@gmail.com"
+                }
+            ],
+            "description": "Формы обратной связи.",
+            "keywords": [
+                "feedback"
+            ],
+            "time": "2017-01-16 07:59:55"
+        },
+        {
+            "name": "interpro/imageaggr",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/intpro/imageaggr.git",
+                "reference": "d864fb3f07d951c55aa6a9b15f30d3e0cee7030b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/d864fb3f07d951c55aa6a9b15f30d3e0cee7030b",
+                "reference": "d864fb3f07d951c55aa6a9b15f30d3e0cee7030b",
+                "shasum": ""
+            },
+            "require": {
+                "interpro/core": "1.0.*",
+                "interpro/extractor": "1.0.*",
+                "intervention/image": "^2.3"
             },
             "type": "library",
             "extra": {
@@ -346,20 +453,20 @@
             "keywords": [
                 "imageaggr"
             ],
-            "time": "2016-12-28 10:45:17"
+            "time": "2017-01-16 08:12:11"
         },
         {
             "name": "interpro/qsaggr",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/qsaggr.git",
-                "reference": "3ca30ebeaacd8cc4ff3fa2d29028fbc6ef03536c"
+                "reference": "06e7d99f7d7d95e464b65d566533a67a7c5aebcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/3ca30ebeaacd8cc4ff3fa2d29028fbc6ef03536c",
-                "reference": "3ca30ebeaacd8cc4ff3fa2d29028fbc6ef03536c",
+                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/06e7d99f7d7d95e464b65d566533a67a7c5aebcc",
+                "reference": "06e7d99f7d7d95e464b65d566533a67a7c5aebcc",
                 "shasum": ""
             },
             "require": {
@@ -393,20 +500,20 @@
             "keywords": [
                 "qsaggr"
             ],
-            "time": "2016-12-28 11:08:44"
+            "time": "2016-12-29 08:45:16"
         },
         {
             "name": "interpro/scalar",
-            "version": "1.0.1",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/scalar.git",
-                "reference": "5331caac2436e8b4084b85a65f73e8881ba78143"
+                "reference": "02453d4c814373019d065fb250b56d4fbe04a4af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/scalar/zipball/5331caac2436e8b4084b85a65f73e8881ba78143",
-                "reference": "5331caac2436e8b4084b85a65f73e8881ba78143",
+                "url": "https://api.github.com/repos/intpro/scalar/zipball/02453d4c814373019d065fb250b56d4fbe04a4af",
+                "reference": "02453d4c814373019d065fb250b56d4fbe04a4af",
                 "shasum": ""
             },
             "require": {
@@ -440,7 +547,7 @@
             "keywords": [
                 "scalar"
             ],
-            "time": "2016-12-28 10:52:07"
+            "time": "2017-01-15 09:33:04"
         },
         {
             "name": "interpro/seo",
@@ -488,6 +595,68 @@
                 "seo"
             ],
             "time": "2016-12-28 11:01:19"
+        },
+        {
+            "name": "intervention/image",
+            "version": "2.3.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "2bce9a59c43b868300b02a7d31a1e4aa67a200ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/2bce9a59c43b868300b02a7d31a1e4aa67a200ae",
+                "reference": "2bce9a59c43b868300b02a7d31a1e4aa67a200ae",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "3.*"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.net",
+                    "homepage": "http://olivervogel.net/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2017-01-10 14:15:56"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -1114,6 +1283,56 @@
                 "random"
             ],
             "time": "2016-03-18 20:34:03"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "psr/log",

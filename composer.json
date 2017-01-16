@@ -1,7 +1,7 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
@@ -14,7 +14,8 @@
         "interpro/qsaggr": "1.0.*",
         "interpro/scalar": "1.0.*",
         "interpro/seo": "1.0.*",
-        "interpro/entrance": "1.0.*"
+        "interpro/entrance": "1.0.*",
+        "interpro/feedback": "1.0.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

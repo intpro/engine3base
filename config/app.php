@@ -147,6 +147,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
         //===================interpro=================
         Interpro\Core\CoreTypesServiceProvider::class,
@@ -155,6 +156,7 @@ return [
         Interpro\Seo\SeoFirstServiceProvider::class,
         Interpro\ImageAggr\ImageAggrFirstServiceProvider::class,
         Interpro\QS\QSFirstServiceProvider::class,
+        Interpro\Feedback\FeedbackFirstServiceProvider::class,
         //============================================
 
         //============================================
@@ -165,6 +167,7 @@ return [
         Interpro\Seo\SeoSecondServiceProvider::class,
         Interpro\ImageAggr\ImageAggrSecondServiceProvider::class,
         Interpro\QS\QSSecondServiceProvider::class,
+        Interpro\Feedback\FeedbackSecondServiceProvider::class,
         //============================================
 
         //============================================
@@ -172,6 +175,7 @@ return [
         Interpro\Entrance\EntranceServiceProvider::class,
         //--------------------------------------------
         Interpro\ImageAggr\ImageAggrUseServiceProvider::class,
+        Interpro\Feedback\FeedbackUseServiceProvider::class,
         //============================================
 
         /*
@@ -227,6 +231,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Image' => Intervention\Image\Facades\Image::class
 
     ],
 
