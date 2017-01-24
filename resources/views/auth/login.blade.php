@@ -33,8 +33,13 @@
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">Введите данные для входа</p>
-
+        @if(count($errors))
+            @foreach($errors->all() as $error)
+                <p class="login-box-msg text-red">{{$error}}</p>
+            @endforeach
+        @else
+            <p class="login-box-msg">Введите данные для входа</p>
+        @endif
         <form action="{{ url('/login') }}" method="post">
             {{ csrf_field() }}
             <div class="form-group has-feedback">
@@ -59,6 +64,7 @@
                 </div>
                 <!-- /.col -->
             </div>
+
         </form>
 
         {{--<a href="#">Я забыл пароль</a><br>--}}
