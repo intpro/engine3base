@@ -1,47 +1,80 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Be right back.</title>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ошибка</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+	body {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: 0;
+		display: flex;
+		overflow: auto;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	p{
+		margin: 0;
+	}
+	p.big {
+		text-align: center;
+		font-size: 80px;
+		line-height: 75px;
+		font-family: "Arial",sans-serif;
+		color: #333333;
+	}
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+	p.big:first-child {
+		border-bottom: 1px solid #999999;
+		margin: 0 auto;
+		max-width: 280px;
+		font-size: 160px;
+		line-height: 140px;
+		color: #333333;
+	}
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+	p.big.error {
+	}
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                color: #B0BEC5;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+	p.text {
+		font-family: "Arial", sans-serif;
+		margin-top: 15px;
+		text-align: center;
+		color: #333333;
+		margin-bottom: 17px;
+	}
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+	a {
+		font-size: 36px;
+		border-bottom: 1px solid rgba(0, 102, 153, 0.25);
+		text-decoration: none;
+		color: #006699;
+		font-family: "Arial", sans-serif;
+	}
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+	a:hover {
+		color: red;
+		border-bottom: 1px solid red;
+	}
 
-            .title {
-                font-size: 72px;
-                margin-bottom: 40px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Be right back.</div>
-            </div>
-        </div>
-    </body>
+	a {}
+
+	p {
+		text-align: center;
+	}
+</style>
+<body>
+<div>
+	<p class="big">503</p>
+	<p class="big error">Ошибка</p>
+	{{--<p class="text"></p>--}}
+	<p><a href="/">На главную</a></p>
+</div>
+</body>
 </html>
