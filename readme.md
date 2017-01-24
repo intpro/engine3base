@@ -3,8 +3,11 @@
 
 После форка и клонрования проекта необходимо из файла .gitignore удалить следующие строки
     `database/migrations/2016_*`
+
     `config/interpro`
+
     `config/image.php`
+    
 
 ## Установка
 
