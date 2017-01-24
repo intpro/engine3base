@@ -15,4 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/taxonomy', 'TestController@showTaxonomy');
+
+Route::auth();
+Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
+
+    Route::get('/',         'AdminController@getIndex');
+    // Таксаномия проекта. Визуальная зависимость данных.
+    Route::get('/taxonomy', 'Back\TaxonomyController@showTaxonomy');
+
+    // Служебные роуты
+    Route::post('/save', 'Back\SaveController@save');
+
+    // Создание нового элемента группы
+    Route::post('/newItemRow', 'Back\GroupItemController@newRow');
+    Route::post('/newItemBox', 'Back\GroupItemController@newBox');
+
+    // Роут удаление элемента группы
+    Route::post('/removeItem', 'Back\GroupItemController@removeItem');
+});
+

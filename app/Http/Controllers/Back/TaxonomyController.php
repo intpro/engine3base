@@ -1,11 +1,12 @@
-<?php namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers\Back;
 
+use App\Http\Controllers\Controller;
 use Interpro\Core\Contracts\Taxonomy\Taxonomy;
 use Interpro\Core\Contracts\Taxonomy\Types\AggrType;
 use Interpro\Core\Contracts\Taxonomy\Types\AType;
 use Interpro\Core\Contracts\Taxonomy\Types\BType;
 
-class TestController extends Controller
+class TaxonomyController extends Controller
 {
 	/**
 	 * @return void
