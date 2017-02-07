@@ -9,7 +9,7 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "interpro/core": "1.1.*",
-        "interpro/service": "1.1.*",
+        "interpro/service": "^1.1",
 
         "interpro/imageaggr": "1.1.*",
         "interpro/qsaggr": "1.1.*",
