@@ -29,6 +29,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
     // Создание нового элемента группы
     Route::post('/newItemRow', 'Back\GroupItemController@newRow');
     Route::post('/newItemBox', 'Back\GroupItemController@newBox');
+    Route::post('/newImage', 'Back\GroupItemController@newImageItem');
 
     // Роут удаление элемента группы
     Route::post('/removeItem', 'Back\GroupItemController@removeItem');
