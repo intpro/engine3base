@@ -4,12 +4,18 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Interpro\Entrance\Contracts\CommandAgent\UpdateAgent;
+use Interpro\ImageAggr\Contracts\CommandAgents\OperationsAgent;
+use Interpro\ImageAggr\Contracts\Settings\PathResolver;
 
 class SaveController extends Controller
 {
+    private $operationsAgent;
     private $update;
-    public function __construct(UpdateAgent $upd){
+    private $pathResolver;
+    public function __construct(UpdateAgent $upd, OperationsAgent $operationsAgent, PathResolver $pathResolver){
         $this->update  = $upd;
+        $this->pathResolver = $pathResolver;
+        $this->operationsAgent = $operationsAgent;
     }
 
     private function  straightenArray( $array ){
@@ -21,7 +27,7 @@ class SaveController extends Controller
                 // То перебираем поля массива
                 foreach($value as $key => $val) {
                     // Если поле ЛОГИЧЕСКОЕ
-                    if($value === 'bool'){
+                    if($field === 'bool'){
                         //============= Приводим к булевому типу =========
                         if($val === 'true'){
                             $result_array += [$key => true];
@@ -54,7 +60,7 @@ class SaveController extends Controller
         $data = $request->all();
         try{
             // перебираем блоки
-            Log::info($data);
+
             foreach($data as $block_name => $block_value){
                 // проверяем поля внутри
                 // если поля то БЛОК
