@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('RerfDfcz'),
         ]);
         \Illuminate\Support\Facades\DB::table('users')->insert([
-            'name' => 'root',
+            'name' => 'Viktor',
             'email' => 'info@interpro.kz',
             'password' => bcrypt('interpro.kz'),
         ]);
