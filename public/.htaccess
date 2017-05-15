@@ -1,3 +1,10 @@
+ <IfModule mod_headers.c>
+        Header set X-XSS-Protection "1; mode=block"
+        Header set X-Frame-Options "DENY"
+
+        Header always edit Set-Cookie (.*) "$1; HTTPOnly"
+        Header always edit Set-Cookie (.*) "$1; Secure"
+    </IfModule>
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews
