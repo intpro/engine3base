@@ -17,4 +17,11 @@ class AdminController extends Controller
     public function getIndex(){
         return view('back.layout');
     }
+
+    public function getExample(){
+        $block = $this->extract->getBlock('example');
+        return view('back.blocks.example', [
+            'block' => $block
+        ]);
+    }
 }

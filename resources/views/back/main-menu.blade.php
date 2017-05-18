@@ -8,26 +8,6 @@
                 </a>
             </li>
             <li>
-                <a href="/adm/advantages">
-                    <i class="fa  fa-check-square"></i> <span>Преимущества</span>
-                </a>
-            </li>
-            <li>
-                <a href="/adm/about">
-                    <i class="fa  fa-file-text-o"></i> <span>О компании</span>
-                </a>
-            </li>
-            <li>
-                <a href="/adm/slider">
-                    <i class="fa fa-image"></i> <span>Слайдер</span>
-                </a>
-            </li>
-            <li>
-                <a href="/adm/certs">
-                    <i class="fa   fa-star-o"></i> <span>Сертификаты</span>
-                </a>
-            </li>
-            <li>
                 <a href="/adm/seo">
                     <i class="fa fa-chrome"></i> <span>СЕО</span>
                 </a>
